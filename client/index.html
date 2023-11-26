@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/libs/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./main.css">
+    <title>Dapp</title>
+</head>
+<body>
+    <div class="container py-5">
+        
+        <div class="row"> 
+           <div class="col-md-4 bg-info">
+            <h1>Dapp</h1>
+            <h6>Decentralized app</h6>
+            <span>wallet</span>
+            <span id="account"></span>
+
+            <form action="" class="bg-dark text-white" id="taskForm">
+                <h5>Save a task</h5>
+                <input name="tittle" type="text" placeholder="write a task" class="form-control">
+                <textarea name="description" rows="2" class="form-control my-4" placeholder="description"></textarea>
+                <button class="btn btn-primary form-control">Save</button>
+              </form>
+         
+               
+
+        </div>
+            <div class="col-md-8 bg-warning" ><div id="tasklist">
+
+            </div></div>
+        </div>
+ 
+    </div>
+    <script src="./libs/@truffle/contract/browser-dist/truffle-contract.min.js"></script>
+    <script src="./app.js" ></script>
+    <script src="./ui.js"></script>
+</body>
+</html>
